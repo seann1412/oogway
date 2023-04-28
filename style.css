@@ -1,0 +1,154 @@
+body {
+  background-color: pink;
+}
+#top1 {
+  font-size: 50px;
+  color: darkslategray;
+  font-family: "lucida handwriting", Cursive;
+}
+#top2 {
+  font-size: 30px;
+  color: darkslategray;
+  font-family: "lucida handwriting", Cursive;
+}
+@keyframes slidein {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+div {
+  animation: slidein 2s;
+  transition-delay: 5s;
+}
+#cat {
+  width: 450px;
+  height: auto;
+}
+#A {
+  font-size: 25px;
+  height: 100px;
+}
+#dropdown {
+  position: ;
+}
+.container {
+  position: relative;
+}
+.last {
+  position: absolute;
+  bottom: 0;
+  font-size: 25px;
+}
+#gender {
+  font-size: 20px;
+}
+#rock {
+  width: 100px;
+  height: auto;
+}
+#shrek {
+  width: auto;
+  height: 100px;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+}
+
+#hello {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: circle 6s linear infinite;
+}
+
+@keyframes circle {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translate(100px) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(900deg) translate(100px)
+      rotate(900deg);
+  }
+}
+
+.btn-3 {
+  background: rgb(0,172,238);
+background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+  font-size:50px;
+  width: 375px;
+  height: 150px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  
+}
+.btn-3 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-3:before,
+.btn-3:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   background: rgba(2,126,251,1);
+  transition: all 0.3s ease;
+}
+.btn-3:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-3:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3:hover{
+   background: transparent;
+  box-shadow: none;
+}
+.btn-3:hover:before {
+  height: 100%;
+}
+.btn-3:hover:after {
+  width: 100%;
+}
+.btn-3 span:hover{
+   color: rgba(2,126,251,1);
+}
+.btn-3 span:before,
+.btn-3 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+   background: rgba(2,126,251,1);
+  transition: all 0.3s ease;
+}
+.btn-3 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-3 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3 span:hover:before {
+  height: 100%;
+}
+.btn-3 span:hover:after {
+  width: 100%;
+}
